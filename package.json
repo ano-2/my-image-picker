@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-my-image-picker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,9 @@
   "dependencies": {
     "react-native-image-crop-picker": "^0.40.0",
     "react-native-vector-icons": "^9.2.0"
+  },
+  "repository":{
+    "type":"github",
+    "url": "https://github.com/ano-2/my-image-picker"
   }
 }

@@ -13,7 +13,6 @@
  */
 import React, { useState }  from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, Pressable, Modal, Image } from 'react-native';
-import { pxToDp } from '../utils/stylesKits';
 
 import Icon from 'react-native-vector-icons/AntDesign';
 import ImagePicker from 'react-native-image-crop-picker';
@@ -31,7 +30,7 @@ const MyImagePicker = (props) => {
         return (
             <TouchableOpacity style={Styles.uploadBox} onPress={()=>{setModalVisible(true)}}>
                 <Icon name="camera" size={30} color="rgba(0,0,0,.6)" />
-                <Text style={{paddingVertical:pxToDp(10),color:'#9a9a9a',fontSize:pxToDp(14)}}>{props.describe}</Text>  
+                <Text style={{paddingVertical:10,color:'#9a9a9a',fontSize:14}}>{props.describe}</Text>  
             </TouchableOpacity>
         )
     }
