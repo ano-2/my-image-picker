@@ -1,0 +1,23 @@
+
+{
+  "name": "react-native-my-image-picker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "android": "react-native run-android",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "",
+  "license": "",
+  "peerDependencies": {
+    "react-native": "^0.67.1"
+  },
+  "dependencies": {
+    "react-native-image-crop-picker": "^0.40.0",
+    "react-native-vector-icons": "^9.2.0"
+  }
+}
