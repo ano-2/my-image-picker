@@ -1,38 +1,45 @@
-
 # react-native-my-image-picker
 
-## Getting started
+React Native image-picker component for Android , base on **react-native-image-crop-picker**. Supports photo or local album uploading.
+
+React Native 图片选择器组件，基于react-native-image-crop-picker开发，支持拍照或本地相册上传
+
+## Install
 
 `$ npm install react-native-my-image-picker --save`
 
 ### Mostly automatic installation
 
+If you are using `React Native <= 0.59.X`, link the native project:
+
 `$ react-native link react-native-my-image-picker`
-
-### Manual installation
-
-
-#### Android
-
-1. Open up `android/app/src/main/java/[...]/MainActivity.java`
-  - Add `import com.quenice.cardview.RNMyImagePickerPackage;` to the imports at the top of the file
-  - Add `new RNMyImagePickerPackage()` to the list returned by the `getPackages()` method
-2. Append the following lines to `android/settings.gradle`:
-  	```
-  	include ':react-native-my-image-picker'
-  	project(':react-native-my-image-picker').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-my-image-picker/android')
-  	```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
-  	```
-      compile project(':react-native-my-image-picker')
-  	```
 
 
 ## Usage
 ```javascript
-import RNMyImagePicker from 'react-native-my-image-picker';
+import MyImagePicker from 'react-native-my-image-picker'
 
-// TODO: What to do with the module?
-RNMyImagePicker;
+
+<MyImagePicker describe={'拍摄/上传'} callBackImage={(image)=>console.log(image)}/>
 ```
-  
+
+
+
+## Properties
+
+| Prop  | Default  | Type | Description |
+| :------------ |:----------------| :---------------:| :-----|
+| describe | 无 （非必须） | String |  |
+|  |  |  |  |
+
+
+
+
+
+
+## methods
+
+| Method  | Params  | Description |
+| :------------ |:---------------:| :---------------:|
+| callBackImage | - | 返回处理后的图片url |
+
