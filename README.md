@@ -2,15 +2,19 @@
 
 React Native image-picker component for Android , base on **react-native-image-crop-picker**. Supports photo or local album uploading.
 
-React Native 图片选择器组件，基于react-native-image-crop-picker开发，支持拍照或本地相册上传
+React Native 图片选择器组件for Android，基于react-native-image-crop-picker开发，支持拍照或本地相册上传
 
+小图标的显示用到了react-native-vector-icons
 
+react-native-image-crop-picker的安装需要配置一下，详细请看github
+
+https://github.com/ivpusic/react-native-image-crop-picker
 
 
 
 ## Example
 
-<img src="http://43.139.223.94:8889/tmp_uploads/statics/image-picker.gif" alt="example" style="zoom:150%;" />
+<img src="http://43.139.223.94:8889/tmp_uploads/statics/image-picker.gif" alt="example" style="width:150%;" />
 
 
 
@@ -38,14 +42,13 @@ If you are using `React Native <= 0.59.X`, link the native project:
 # basic usage
 import MyImagePicker from 'react-native-my-image-picker'
 
-<View style={{height:pxToDp(150),width:pxToDp(150)}}>
+<View style={{height:150,width:150}}>
 	<MyImagePicker describe={'拍摄/上传'} callBackImage={(image)=>console.log(image)}/>
 </View>
 ```
 
 
-
-<img src="http://43.139.223.94:8889/tmp_uploads/statics/image-20230803.png" alt="example" style="zoom: 33%;" />
+<img src="http://43.139.223.94:8889/tmp_uploads/statics/image-20230803.png" alt="example" style="width: 33%;" />
 
 
 
