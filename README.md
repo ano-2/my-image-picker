@@ -14,9 +14,13 @@ https://github.com/ivpusic/react-native-image-crop-picker
 
 ## Example
 
-<img src="./images/image-picker.gif" alt="example" width="330" />
+打开相机
 
+<img src="./images/openCamera.gif" alt="example" width="330" />
 
+打开相册
+
+<img src="./images/openPicker.gif" alt="example" width="330" />
 
 
 

@@ -4,7 +4,7 @@
  * @Params describe: String 描述默认为 空
  * 		     containerStyle Object
  *         pickTextStyle Object
- * @return callBackImage function
+ * @return callBackImage
  */
 import React, { useState }  from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, Pressable, Modal, Image } from 'react-native'; 
@@ -13,6 +13,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 import ImagePicker from 'react-native-image-crop-picker';
 
 const MyImagePicker = (props) => {
+    // 传入参数 
     const [isUpload, setIsUpload] = useState(false);
     const [image, setImage] = useState(undefined);
     // 
@@ -75,7 +76,7 @@ const MyImagePicker = (props) => {
                       .then(image => {
                         setImage(image.path)
                         setIsUpload(true)
-                        props.callBackImage(image.path)
+                        props.callBackImage(image)
                       }).finally(()=>setModalVisible(false)) // 选完照片关闭弹窗
                 }} style={{paddingVertical:20,justifyContent:'center',alignItems:'center',backgroundColor:'white'}}>
                     <Icon name="camerao" size={30} color="rgba(0,0,0,.6)" />
@@ -92,7 +93,7 @@ const MyImagePicker = (props) => {
                         .then(image => {
                           setImage(image.path)
                           setIsUpload(true)
-                          props.callBackImage(image.path)
+                          props.callBackImage(image)
                         }).finally(()=>setModalVisible(false))// 选完照片关闭弹窗
                 }} style={{paddingVertical:20,justifyContent:'center',alignItems:'center',backgroundColor:'white'}}>
                     <Icon name="picture" size={30} color="rgba(0,0,0,.6)" />
@@ -143,7 +144,7 @@ var Styles = StyleSheet.create({
     pickViewText:{
       paddingVertical:10,
       color:'#9a9a9a',
-      fontSize:10
+      fontSize:14
     }
 });
 
