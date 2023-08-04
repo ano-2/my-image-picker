@@ -86,6 +86,8 @@ import MyImagePicker from 'react-native-my-image-picker'
 
 <img src="http://43.139.223.94:8889/tmp_uploads/statics/image-picker-changeCrop.png" alt="example" width="300" />
 
+<img src="./images/image-picker-changeCrop.png" alt="example" width="300" />
+
 ## Properties
 
 | Prop  | Default  | Type | Description |
