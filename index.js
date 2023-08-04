@@ -68,8 +68,8 @@ const MyImagePicker = (props) => {
                 <TouchableOpacity onPress={()=>{
                   // 打开相机
                   ImagePicker.openCamera({
-                      width: 460,
-                      height: 287.5,
+                      width: props.crop.width,
+                      height: props.crop.height,
                       cropping: true,
                     })
                       .then(image => {
@@ -85,8 +85,8 @@ const MyImagePicker = (props) => {
                 <TouchableOpacity onPress={()=>{
                     // 打开相册
                     ImagePicker.openPicker({
-                        width: 460,
-                        height: 287.5,
+                        width: props.crop.width,
+                        height: props.crop.height,
                         cropping: true,
                       })
                         .then(image => {
@@ -116,7 +116,11 @@ MyImagePicker.defaultProps = {
   callBackImage: () => {},
   describe: '',
   containerStyle : {},
-  pickTextStyle: {}
+  pickTextStyle: {},
+  crop:{
+    width:460,
+    height: 287.5
+  }
 }
 
 export default MyImagePicker;
