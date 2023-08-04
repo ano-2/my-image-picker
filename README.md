@@ -14,7 +14,7 @@ https://github.com/ivpusic/react-native-image-crop-picker
 
 ## Example
 
-<img src="http://43.139.223.94:8889/tmp_uploads/statics/image-picker.gif" alt="example" width="330" />
+<img src="./images/image-picker.gif" alt="example" width="330" />
 
 
 
@@ -49,7 +49,7 @@ import MyImagePicker from 'react-native-my-image-picker'
 </View>
 ```
 
-<img src="http://43.139.223.94:8889/tmp_uploads/statics/image-20230803.png" alt="example" width="300" />
+<img src="./images/image-20230803.png" alt="example" width="300" />
 
 
 
@@ -65,7 +65,7 @@ import MyImagePicker from 'react-native-my-image-picker'
 ```
 
 
- <img src="http://43.139.223.94:8889/tmp_uploads/statics/image-picker.png" width="300">
+ <img src="./images/image-picker.png" width="300">
 
 `
 
@@ -84,7 +84,7 @@ import MyImagePicker from 'react-native-my-image-picker'
 </View>
 ```
 
-<img src="http://43.139.223.94:8889/tmp_uploads/statics/image-picker-changeCrop.png" alt="example" width="300" />
+
 
 <img src="./images/image-picker-changeCrop.png" alt="example" width="300" />
 
